@@ -46,6 +46,8 @@
 | AI Predictions | Scikit-learn + TensorFlow Lite |
 | Offline Mode | SQLite + Hive (Flutter) |
 | SOS System | Twilio API + Firebase |
+| Weather Data | OpenWeatherMap + World Tides API |
+| Authentication | JWT + OAuth2 |
 
 ---
 
@@ -62,8 +64,8 @@ MongoDB 5+
 ### 1. Clone Repository  
 
 ```bash
-git clone https://github.com/matsyan-Innovative-Sparkes/SmartNavFish-Fishing Route Optimizer.git
-cd SmartNavFish-Fishing Route Optimizer
+git clone https://github.com/matsyan-Innovative-Sparkes/smartnavfish.git
+cd smartnavfish
 ```
 
 ### 2. Set Up Environment  
@@ -85,7 +87,7 @@ pip install -r requirements.txt
 ```bash
 # PostgreSQL Setup
 createdb SmartNavFish-Fishing Route Optimizer
-psql -U postgres -d SmartNavFish-Fishing Route Optimizer -c "CREATE EXTENSION postgis;"
+psql -U postgres -d smartnavfish -c "CREATE EXTENSION postgis;"
 
 # MongoDB Setup (ensure service is running)
 ```
@@ -138,10 +140,10 @@ gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app
 
 | Member | Role | Contribution |
 |--------|------|--------------|
-| Krishna N | Team Lead | AI Architecture & Backend |
+| Krishna N | DevOps Engineer | Cloud Deployment |
 | Miracline Gladys J | UI/UX Expert | Flutter Mobile App |
 | Karthika V | Data Scientist | ML Model Training |
-| Madhav R | DevOps Engineer | Cloud Deployment |
+| Madhav R | Team Lead | AI Architecture & Backend |
 
 ---
 
