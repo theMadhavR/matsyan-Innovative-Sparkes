@@ -12,7 +12,7 @@ router = APIRouter()
 class SOSRequest(BaseModel):
     latitude: float
     longitude: float
-    message: Optional[str] = None
+    message: str = None
 
 @router.post("/sos")
 def send_sos(
